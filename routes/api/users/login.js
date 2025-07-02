@@ -31,6 +31,8 @@ router.post("/", async (req, res) => {
           emailToken: emailToken,
           userId: findUser.id,
           isVerified: isVerified,
+          nameUser: nameUser,
+          emailUser: emailUser,
         });
       } else {
         res.status(401).json({ mensaje: "Contraseña inválida" });
